@@ -1,0 +1,31 @@
+
+version: 2
+
+models:
+  - name: User
+    description: "A user dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+models:
+  - name: Post
+    description: "A post dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+models:
+  - name: Badge
+    description: "A badge dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
